@@ -1,0 +1,53 @@
+header,
+.header {
+    position: fixed;
+    width   : 100%;
+    z-index : 4;
+    @extend .transition;
+    padding: 0.875rem 0;
+
+    .header--flex {
+        @include flexbox();
+        @include align-items(center);
+    }
+
+    .top-icons {
+        margin-left: auto;
+        font-size  : 0;
+        margin-right: 0;
+
+        &-items {
+            color      : $website-brand-color;
+            background : $base-white-color;
+            font-weight: 600;
+            width      : 52px;
+            height     : 52px;
+            position   : relative;
+            cursor     : pointer;
+            border     : solid 1px #000;
+            @extend .middle_align;
+            @include border-radius(100px);
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            em {
+                font-style: normal;
+            }
+
+            &.dropdown {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &.fixed-top-menu {
+        background: $base-white-color;
+        margin-top: 0;
+        top       : 0;
+        @extend .transition;
+        padding: 10px 0;
+        @include box-shadow(0, 5px, 10px, rgba(0, 0, 0, 0.1));
+    }
+}

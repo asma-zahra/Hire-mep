@@ -1,0 +1,32 @@
+.btn-primary {
+    position     : relative;
+    height       : $button-height;
+    padding      : 20px 40px;
+    border-radius: 10px;
+    background   : $primary-color;
+    display      : inline-block;
+    border       : none;
+    font-size    : $button-font-size;
+    font-weight  : 700;
+    font-family  : $base-font-family;
+    cursor       : pointer;
+    color        : $base-white-color;
+    @extend .transition;
+
+    &:hover {
+        @include scale(1.03);
+    }
+}
+
+.btn-outline-primary {
+    color: $base-font-color;
+    @include border-radius(12px);
+    @include box-shadow(0, 0.5rem, 1rem, rgba(0, 0, 0, 0.15));
+    background: $base-light-color;
+    border    : 1px solid $website-brand-color;
+    font-size : 1.125rem;
+    cursor    : pointer;
+    padding   : 10px 15px;
+    display   : inline-block;
+    height    : 50px;
+}

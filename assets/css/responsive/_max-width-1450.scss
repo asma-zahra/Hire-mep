@@ -1,0 +1,18 @@
+@media (max-width: 1449.98px) {
+    .container {
+        max-width: 1140px;
+    }
+   
+    .banner {
+        padding: 170px 0 180px;
+
+        &:after {
+            max-width: 50%;
+        }
+
+        h1 {
+            font-size: 3.200rem;
+        }
+    }
+       
+}

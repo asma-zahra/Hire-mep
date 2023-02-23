@@ -1,0 +1,84 @@
+#vecrm-form form {
+    text-align: left;
+}
+
+form .marketing-field .lp-form-field label {
+    color         : $base-font-color !important;
+    font-size     : 0.8181rem !important;
+    padding-bottom: 0 !important;
+    opacity       : 1 !important;
+    font-weight   : 700 !important;
+    font-family   : $base-font-family !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field input,
+#vecrm-form form .marketing-field .lp-form-field select,
+#vecrm-form form .marketing-field .lp-form-field textarea {
+    border          : solid 1px $border-color !important;
+    font-size       : 16px;
+    padding         : 10px 15px;
+    background-color: #fff;
+    font-weight     : 400;
+    font-family   : $base-font-family !important;
+}
+
+#vecrm-form form [data-editorblocktype="Field-phone"],
+#vecrm-form form [data-editorblocktype="Field-lookup"] {
+    margin-top: 10px;
+}
+#vecrm-form form .marketing-field .lp-form-field select:invalid {
+    color: #a7a7a7 !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field select {
+    color: #111 !important;
+}
+
+form .marketing-field .lp-form-field input:focus,
+form .marketing-field .lp-form-field select:focus,
+form .marketing-field .lp-form-field textarea:focus {
+    box-shadow: 0 0 0 0.25rem #eeeefd !important;
+    outline   : none;
+}
+
+form .marketing-field .lp-form-field input:focus-visible,
+form .marketing-field .lp-form-field select:focus-visible,
+form .marketing-field .lp-form-field textarea:focus-visible {
+    outline: none !important;
+}
+
+form .marketing-field .lp-form-field input,
+form .marketing-field .lp-form-field select,
+form .marketing-field .lp-form-field textarea {
+    margin-top: 0;
+}
+
+.lp-form-button {
+    background      : $website-brand-color !important;
+    color           : $base-white-color !important;
+    border          : none !important;
+    border-radius   : 5px !important;
+    font-weight     : 700 !important;
+    max-width       : 100% !important;
+    font-size       : $button-font-size !important;
+    line-height     : 1.5;
+    padding         : 15px 20px !important;
+    height          : 55px;
+    // box-shadow   : 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition      : all .5s;
+    cursor          : pointer;
+    font-family   : $base-font-family !important;
+}
+
+
+
+.lp-form-button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 991px) {
+    .lp-form-button {
+        padding  : 15px 20px !important;
+        font-size: 1rem !important;
+    }
+}

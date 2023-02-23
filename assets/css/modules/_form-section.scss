@@ -1,0 +1,114 @@
+.formbg {
+    background-color: #F9F9FB;
+    padding         : 100px 0 0;
+
+    .formbox {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+
+        .formleft {
+            padding-right: 100px;
+            width        : 100%;
+
+            .sechead {
+                margin-bottom: 65px;
+            }
+
+            .form-points {
+                ul {
+                    font-weight: 400;
+                    font-size  : 24px;
+                    color      : $base-font-color;
+                    list-style : none;
+
+                    li {
+                        position: relative;
+                        @include flexbox();
+                        @include align-items(center);
+
+                        span {
+                            width       : calc(100% - 70px);
+                            padding-left: 25px;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .formtamp {
+            width           : 100%;
+            background-color: #FFFFFF;
+            border-radius   : 2px;
+            padding         : 60px 30px 50px;
+            @include box-shadow(0, 0px, 20px, #a7a2a2);
+
+            .columnContainer {
+                p {
+                    margin-top: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1439.98px) {
+    .formbg {
+        .formbox {
+            .formleft {
+                padding-right: 3rem;
+
+                .form-points {
+                    ul {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .lp-form-button {
+        padding  : 12px 15px !important;
+        font-size: 16px !important;
+    }
+
+    .formbg {
+        .formbox {
+            @include flex-direction(column);
+
+            .formleft {
+                padding-right: 0;
+                margin-bottom: 30px;
+
+                .sechead {
+                    br {
+                        display: none;
+                    }
+                }
+
+                .form-points {
+                    ul {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .formbg {
+        .formbox {
+            .formtamp {
+                max-width: 564px;
+            }
+        }
+    }
+}
