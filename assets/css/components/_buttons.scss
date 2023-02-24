@@ -1,11 +1,11 @@
 .btn-primary {
     position     : relative;
     height       : $button-height;
-    padding      : 20px 40px;
-    border-radius: 10px;
+    padding      : 34px 97px;
+    @include border-radius(100px);
     background   : $primary-color;
     display      : inline-block;
-    border       : none;
+    border       : 4px solid $base-white-color;
     font-size    : $button-font-size;
     font-weight  : 700;
     font-family  : $base-font-family;
@@ -20,13 +20,15 @@
 
 .btn-outline-primary {
     color: $base-font-color;
-    @include border-radius(12px);
+    @include border-radius(100px);
     @include box-shadow(0, 0.5rem, 1rem, rgba(0, 0, 0, 0.15));
-    background: $base-light-color;
-    border    : 1px solid $website-brand-color;
-    font-size : 1.125rem;
+    background: $base-white-color;
+    border    : 3px solid $website-brand-color;
+    font-size : $button-font-size;
     cursor    : pointer;
-    padding   : 10px 15px;
+    padding   : 17px 60px;
     display   : inline-block;
-    height    : 50px;
+    height    : 70px;
+
+
 }

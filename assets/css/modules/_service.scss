@@ -1,0 +1,43 @@
+.service{
+    position: relative;
+    .service_bg{
+        position: absolute;
+        background: url('assets/images/service_bg.jpg') no-repeat;
+        width: 943.09px;
+        height: 1012px;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    h4{
+        margin-bottom: 115px;
+    }
+    .inner_container {
+        margin-bottom: 130px;
+        .item{
+            display: flex;
+            .left_image{
+                margin-right: 135px;
+            }
+            .right_content{
+                align-self: flex-end;
+                .inner_content{
+                    transform: translateX(30%);
+                    p{
+                        max-width: 670px;
+                        margin-bottom: 56px;
+                    }
+                    button{
+                        margin-bottom: 20px;
+                    }
+    
+                }
+               
+            }
+        }
+    
+    }
+   
+}

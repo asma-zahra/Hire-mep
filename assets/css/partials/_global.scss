@@ -1,17 +1,17 @@
-$base-font-color : #16262E;
-$base-font-family : 'Open Sans',
-sans-serif;
+$base-font-color     : #141414;
+$SubHeading_color    : #1A1919;
+$base-font-family    :'Spline Sans', sans-serif;
 $base-font-size      : 1rem;
 $base-font-weight    : 500;
-$base-line-height    : 1.2;
-$base-light-color    : #F7F4EF;
-$base-grey-color     : #9496A1;
-$base-light-grey     : #F9F9FB;
+$base-blue-color     : #0C45FF;
+$base-grey-color     : #484848;
 $base-white-color    : #ffffff;
-$website-brand-color : #FF006B;
-$highlight-color     : #2400FF;
-$border-color        : #9496A1;
-$sucess-color        : #89D192;
+$website-brand-color : #FF6666;
+$highlight-color     : #F7F7F7;
+$footer_text         : #F0EBF1;
+$base-line-height    : 1.4;
+$base-light-color    : #F7F4EF;
+
 
 
 //HEADER VARIABLES
@@ -19,8 +19,9 @@ $header-height: 130px;
 
 // BUTTONS VARIABLES
 $primary-color    : $website-brand-color;
-$button-font-size : 0.9090rem;
-$button-height    : 65px;
+$button-font-size : 1.09090rem;
+$button-height    : 96px;
 
 //FIELD VARIABLES
-$field-height: 50px;
+$field-height: 60px;
+$form_background:#E5E0F7

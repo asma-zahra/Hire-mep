@@ -19,49 +19,51 @@ body {
     color      : $base-font-color;
     font-weight: $base-font-weight;
 }
+h3 {
+    font-size: 1.36rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $SubHeading_color;
+    margin-bottom: 45px;
+}
 h1 {
     font-weight: 700;
-    font-size: 3.909rem;
+    font-size: 4.5454rem;
+    text-transform: capitalize;
+    margin-bottom: 90px;
 }
 h2 {
-    font-weight: 700;
-    font-size: 2.181rem;
+    font-weight: 600;
+    font-size: 4.5454rem;
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
-h3 {
-    font-size: 1.4545rem;
-    font-weight: 400;
-}
+
 h4 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.3636rem;
-    margin-bottom: 100px;
-
-    span {
-        font-size: 1.6363rem;
-        color: $highlight-color;
-        position: relative;
-
-        &::after {
-            content        : '';
-            position       : absolute;
-            bottom         : -20px;
-            left           : 0;
-            background     : url('assets/images/highlight-line.svg') no-repeat;
-            background-size: 100%;
-            width          : 100%;
-            height         : 20px;
-        }
-    }
+    text-transform: capitalize;
+}
+span {
+    color: $base-blue-color ;
+    position: relative;
+    font-weight: 600;
 }
 
 h5 {
-    font-size: 1.090rem;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 2.9090rem;
+    text-transform: capitalize;
+    margin-bottom: 76px;
+}
+p{
+    font-weight: 400;
+    font-size: 1.2727rem;
+    color: $base-grey-color ;
 }
 
 .container {
-    width        : 1450px;
+    width        : 1440px;
     padding-left : 1rem;
     padding-right: 1rem;
     margin       : 0 auto;
